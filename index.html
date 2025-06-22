@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Calculator - AntaniaHan</title>
+    <!-- Google Font -->
+     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <!-- CSS External -->
+     <link rel="stylesheet" href="css\style.css">
+</head>
+
+<body>
+    <!-- Head Content -->
+     <Header>
+        <h1>Math Calculator</h1>
+
+        <p>Gunakan Math Calculator untuk menghitung luas dan keliling.</p>
+
+        <nav>
+            <a class="bg-segitiga" href="">Segitiga</a>
+            <a class="bg-persegi" href="">Persegi</a>
+        </nav>
+     </Header>
+
+    <!-- Main Content -->
+     <main>
+        <!-- Luas -->
+        <section>
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+            <!-- Konten Luas -->
+            <div class="formula-img img-luas"></div>
+
+            <p>Rumus: 1/2 x b (alas) x h (tinggi)</p>
+
+            <!-- Form Luas -->
+             <form id="form-luas">
+                <header>
+                    <h3>Hitung Luas Segitiga</h3>
+                </header>
+
+                <div>
+                    <label for="alas">Alas:</label>
+                    <input type="number" id="alas" name="alas" step="any" placeholder="Masukkan Alas Segitiga">
+                </div>
+
+                <div>
+                    <label for="tinggi">Tinggi:</label>
+                    <input type="number" id="tinggi" name="tinggi" step="any" placeholder="Masukkan Tinggi Segitiga">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Hitung</button>
+                    <button type="button" id="resetLuas">Reset</button>
+                </div>
+
+                <div>
+                    <label for="luas">Luas:</label>
+                    <input type="text" class="display" id="luas" disabled>
+                </div>
+             </form>
+        </section>
+
+        <!-- Keliling -->
+         <section>
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+            <!-- Konten Keliling -->
+            <div class="formula-img img-keliling"></div>
+
+            <p>Rumus: sisi a + sisi b + sisi c</p>
+
+            <!-- Form Keliling -->
+             <form id="form-keliling">
+                <header>
+                    <h3>Hitung Keliling Segitiga</h3>
+                </header>
+
+                <div>
+                    <label for="sisi-a">Sisi a:</label>
+                    <input type="number" id="sisi-a" name="sisi-a" step="any" placeholder="Masukkan Sisi a Segitiga">
+                </div>
+
+                <div>
+                    <label for="sisi-b">Sisi b:</label>
+                    <input type="number" id="sisi-b" name="sisi-b" step="any" placeholder="Masukkan Sisi b Segitiga">
+                </div>
+
+                <div>
+                    <label for="sisi-c">Sisi c:</label>
+                    <input type="number" id="sisi-c" name="sisi-c" step="any" placeholder="Masukkan Sisi c Segitiga">
+                </div>
+
+                <div class="button-group">
+                    <button type="submit">Hitung</button>
+                    <button type="button" id="resetKeliling">Reset</button>
+                </div>
+
+                <div>
+                    <label for="keliling">Keliling:</label>
+                    <input type="text" class="display" id="keliling" disabled>
+                </div>
+             </form>
+         </section>
+     </main>
+
+    <!-- Footer Content -->
+     <footer>
+        <p>&copy; 2025 AntaniaHan. All rights reserved</p>
+     </footer>
+     <script src="js\script.js"></script>
+</body>
+
+</html>
