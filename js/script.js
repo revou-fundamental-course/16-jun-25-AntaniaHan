@@ -2,6 +2,7 @@ console.log("✅ script.js berhasil dijalankan");
 
 // === Segitiga ===
 const formLuas = document.getElementById("form-luas");
+const pesanError = document.getElementById("errorLuas");
 if (formLuas) {
     formLuas.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -11,13 +12,14 @@ if (formLuas) {
         const hasilLuas = document.getElementById("luas");
 
         if (isNaN(alas) || isNaN(tinggi)) {
-            alert("Masukkan angka yang valid untuk alas dan tinggi!");
+            pesanError.innerHTML = "<strong>Masukkan angka yang valid untuk alas dan tinggi!</strong>";
             return;
         }
         if (alas <= 0 || tinggi <= 0) {
-            alert("Angka tidak boleh nol atau negatif!");
+            pesanError.innerHTML = "<strong>Angka tidak boleh nol atau negatif!</strong>";
             return;
         }
+        pesanError.innerHTML = "";
 
         const luas = 0.5 * alas * tinggi;
         hasilLuas.value = (Math.round(luas * 100) / 100).toString();
@@ -30,10 +32,12 @@ if (resetLuas) {
         document.getElementById("alas").value = "";
         document.getElementById("tinggi").value = "";
         document.getElementById("luas").value = "";
+        document.getElementById("errorLuas").innerHTML = "";
     });
 }
 
 const formKeliling = document.getElementById("form-keliling");
+const pesanErrorKeliling = document.getElementById("errorKeliling");
 if (formKeliling) {
     formKeliling.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -44,13 +48,14 @@ if (formKeliling) {
         const hasilKeliling = document.getElementById("keliling");
 
         if (isNaN(sisiA) || isNaN(sisiB) || isNaN(sisiC)) {
-            alert("Semua sisi harus diisi dengan angka yang valid!");
+            pesanErrorKeliling.innerHTML = "<strong>Masukkan angka yang valid untuk alas dan tinggi!</strong>";
             return;
         }
         if (sisiA <= 0 || sisiB <= 0 || sisiC <= 0) {
-            alert("Sisi tidak boleh nol atau negatif!");
+            pesanErrorKeliling.innerHTML = "<strong>Angka tidak boleh nol atau negatif!</strong>";
             return;
         }
+        pesanErrorKeliling.innerHTML = "";
 
         const keliling = sisiA + sisiB + sisiC;
         hasilKeliling.value = (Math.round(keliling * 100) / 100).toString();
@@ -64,11 +69,13 @@ if (resetKeliling) {
         document.getElementById("sisi-b").value = "";
         document.getElementById("sisi-c").value = "";
         document.getElementById("keliling").value = "";
+        document.getElementById("errorKeliling").innerHTML = "";
     });
 }
 
 // === Jajar Genjang ===
 const formLuasJG = document.getElementById("form-luas-jg");
+const pesanErrorJG = document.getElementById("errorLuasJG");
 if (formLuasJG) {
     formLuasJG.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -78,13 +85,14 @@ if (formLuasJG) {
         const hasilLuas = document.getElementById("luas-jg");
 
         if (isNaN(alas) || isNaN(tinggi)) {
-            alert("Masukkan angka yang valid untuk alas dan tinggi!");
+            pesanErrorJG.innerHTML = "<strong>Masukkan angka yang valid untuk alas dan tinggi!</strong>";
             return;
         }
         if (alas <= 0 || tinggi <= 0) {
-            alert("Angka tidak boleh nol atau negatif!");
+            pesanErrorJG.innerHTML = "<strong>Angka tidak boleh nol atau negatif!</strong>";
             return;
         }
+        pesanErrorJG.innerHTML = "";
 
         const luas = alas * tinggi;
         hasilLuas.value = (Math.round(luas * 100) / 100).toString();
@@ -97,10 +105,12 @@ if (resetLuasJG) {
         document.getElementById("jg-alas").value = "";
         document.getElementById("jg-tinggi").value = "";
         document.getElementById("luas-jg").value = "";
+        document.getElementById("errorLuasJG").innerHTML = "";
     });
 }
 
 const formKelilingJG = document.getElementById("form-keliling-jg");
+const pesanErrorKelilingJG = document.getElementById("errorKelilingJG");
 if (formKelilingJG) {
     formKelilingJG.addEventListener("submit", function (event) {
         event.preventDefault();
@@ -110,13 +120,14 @@ if (formKelilingJG) {
         const hasilKeliling = document.getElementById("keliling-jg");
 
         if (isNaN(sisiA) || isNaN(sisiB)) {
-            alert("Masukkan angka yang valid untuk sisi a dan sisi b!");
+            pesanErrorKelilingJG.innerHTML = "<strong>Masukkan angka yang valid untuk alas dan tinggi!</strong>";
             return;
         }
         if (sisiA <= 0 || sisiB <= 0) {
-            alert("Sisi tidak boleh nol atau negatif!");
+            pesanErrorKelilingJG.innerHTML = "<strong>Angka tidak boleh nol atau negatif!</strong>";
             return;
         }
+        pesanErrorKelilingJG.innerHTML = "";
 
         const keliling = 2 * (sisiA + sisiB);
         hasilKeliling.value = (Math.round(keliling * 100) / 100).toString();
@@ -129,5 +140,6 @@ if (resetKelilingJG) {
         document.getElementById("jg-a").value = "";
         document.getElementById("jg-b").value = "";
         document.getElementById("keliling-jg").value = "";
+        document.getElementById("errorKelilingJG").innerHTML = "";
     });
 }
