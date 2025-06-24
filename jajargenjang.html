@@ -29,39 +29,39 @@
         <!-- Luas -->
         <section>
             <header>
-                <h2>Luas Segitiga</h2>
+                <h2>Luas Jajar Genjang</h2>
             </header>
             <!-- Konten Luas -->
             <div>
-                <img src="images/segitiga-luas.png" alt="segitiga" class="formula-img">
+                <img src="images/jajargenjang-luas.png" alt="jajargenjang" class="formula-img">
             </div>
 
-            <p>Rumus: 1/2 x a (alas) x t (tinggi)</p>
+            <p>Rumus: a (alas) x t (tinggi)</p>
 
             <!-- Form Luas -->
-             <form id="form-luas">
+             <form id="form-luas-jg">
                 <header>
-                    <h3>Hitung Luas Segitiga</h3>
+                    <h3>Hitung Luas Jajar Genjang</h3>
                 </header>
 
                 <div>
-                    <label for="alas">Alas:</label>
-                    <input type="number" id="alas" name="alas" step="any" placeholder="Masukkan Alas Segitiga">
+                    <label for="jg-alas">Alas:</label>
+                    <input type="number" id="jg-alas" name="alas" step="any" placeholder="Masukkan Alas Jajar Genjang">
                 </div>
 
                 <div>
-                    <label for="tinggi">Tinggi:</label>
-                    <input type="number" id="tinggi" name="tinggi" step="any" placeholder="Masukkan Tinggi Segitiga">
+                    <label for="jg-tinggi">Tinggi:</label>
+                    <input type="number" id="jg-tinggi" name="tinggi" step="any" placeholder="Masukkan Tinggi Jajar Genjang">
                 </div>
 
                 <div class="button-group">
                     <button type="submit">Hitung</button>
-                    <button type="button" id="resetLuas">Reset</button>
+                    <button type="button" id="resetLuas-jg">Reset</button>
                 </div>
 
                 <div>
-                    <label for="luas">Luas:</label>
-                    <input type="text" class="display" id="luas" disabled>
+                    <label for="luas-jg">Luas:</label>
+                    <input type="text" class="display" id="luas-jg" disabled>
                 </div>
              </form>
         </section>
@@ -69,44 +69,39 @@
         <!-- Keliling -->
          <section>
             <header>
-                <h2>Keliling Segitiga</h2>
+                <h2>Keliling Jajar Genjang</h2>
             </header>
             <!-- Konten Keliling -->
             <div>
-                <img src="images/segitiga-keliling.png" alt="segitiga" class="formula-img">
+                <img src="images/jajargenjang-keliling.png" alt="jajargenjang" class="formula-img">
             </div>
 
-            <p>Rumus: sisi a + sisi b + sisi c</p>
+            <p>Rumus: 2 x (sisi a + sisi b)</p>
 
             <!-- Form Keliling -->
-             <form id="form-keliling">
+             <form id="form-keliling-jg">
                 <header>
-                    <h3>Hitung Keliling Segitiga</h3>
+                    <h3>Hitung Keliling Jajar Genjang</h3>
                 </header>
 
                 <div>
-                    <label for="sisi-a">Sisi a:</label>
-                    <input type="number" id="sisi-a" name="sisi-a" step="any" placeholder="Masukkan Sisi a Segitiga">
+                    <label for="jg-a">Sisi a:</label>
+                    <input type="number" id="jg-a" name="sisi-a" step="any" placeholder="Masukkan Sisi a Jajar Genjang">
                 </div>
 
                 <div>
-                    <label for="sisi-b">Sisi b:</label>
-                    <input type="number" id="sisi-b" name="sisi-b" step="any" placeholder="Masukkan Sisi b Segitiga">
-                </div>
-
-                <div>
-                    <label for="sisi-c">Sisi c:</label>
-                    <input type="number" id="sisi-c" name="sisi-c" step="any" placeholder="Masukkan Sisi c Segitiga">
+                    <label for="jg-b">Sisi b:</label>
+                    <input type="number" id="jg-b" name="sisi-b" step="any" placeholder="Masukkan Sisi b Jajar Genjang">
                 </div>
 
                 <div class="button-group">
                     <button type="submit">Hitung</button>
-                    <button type="button" id="resetKeliling">Reset</button>
+                    <button type="button" id="resetKeliling-jg">Reset</button>
                 </div>
 
                 <div>
-                    <label for="keliling">Keliling:</label>
-                    <input type="text" class="display" id="keliling" disabled>
+                    <label for="keliling-jg">Keliling:</label>
+                    <input type="text" class="display" id="keliling-jg" disabled>
                 </div>
              </form>
          </section>
@@ -116,7 +111,7 @@
      <footer>
         <p>&copy; 2025 AntaniaHan. All rights reserved</p>
      </footer>
-     <script src="js/script.js"></script>
+     <script src="js/script.js" defer></script>
 </body>
 
 </html>

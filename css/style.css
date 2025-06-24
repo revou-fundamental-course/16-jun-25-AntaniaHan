@@ -2,10 +2,6 @@ header {
     text-align: center;
 }
 
-h1 {
-    letter-spacing: 1px;
-}
-
 body {
     font-family: "Lato", sans-serif;
     background: #ecf0f3;
@@ -32,7 +28,7 @@ nav a {
     margin-top: 15px;
 }
 
-.bg-persegi {
+.bg-jajargenjang {
     background: black;
     border: 1px solid #ecf0f3;
     border-radius: 10px;
@@ -57,24 +53,12 @@ main>section {
     box-shadow: 13px 13px 20px #cbced1;
 }
 
-h2 {
-    letter-spacing: 1px;
-}
-
 .formula-img {
     height: 180px;
     width: 269px; 
     background-position: center;
     background-size: cover;
     margin: 0 auto;
-}
-
-.img-luas {
-    background-image: url(https://www.inchcalculator.com/wp-content/uploads/2022/12/triangle-base-height.png);
-}
-
-.img-keliling {
-    background-image: url(https://www.inchcalculator.com/wp-content/uploads/2022/12/triangle-sss.png);
 }
 
 /* form Style */
@@ -104,8 +88,15 @@ input[type=number] {
     width: 100%;
     height: 40px;
     color: #ecf0f3;
-    background-color: black;
+    background-color: black; 
     letter-spacing: 1px;
+}
+
+#resetLuas,
+#resetLuas-jg,
+#resetKeliling,
+#resetKeliling-jg {
+    background-color: rgb(116, 116, 116);
 }
 
 input[type=text] {
